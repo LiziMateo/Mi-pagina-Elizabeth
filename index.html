@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Diana Elizabeth Cruz Mateo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #fffafc;
+      transition: background 0.5s;
+    }
+
+    .navbar {
+      background-color:rgb(154, 208, 255);
+    }
+
+    .navbar-brand {
+      font-weight: bold;
+      font-size: 1.3rem;
+    }
+
+    .nav-link {
+      color: white !important;
+    }
+
+    .nav-link:hover {
+      background-color:rgb(160, 245, 255);
+      border-radius: 5px;
+    }
+
+    .perfil-img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 0%;
+      border: 5px solid #fff;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .seccion {
+      display: none;
+      padding: 50px 0;
+      opacity: 0;
+      transition: all 0.5s ease-in-out;
+    }
+
+    .active-section {
+      display: block;
+      opacity: 1;
+    }
+
+    h2 {
+      color:rgb(22, 22, 23);
+    }
+
+    footer {
+      background-color:rgb(143, 237, 244);
+      color: white;
+    }
+
+    .btn-primary {
+      background-color:rgb(114, 200, 246);
+      border: none;
+    }
+
+    .btn-primary:hover {
+      background-color:rgb(97, 134, 255);
+    }
+
+    .form-control:focus {
+      border-color:rgb(143, 217, 244);
+      box-shadow: 0 0 0 0.2rem rgba(244, 143, 177, 0.25);
+    }
+  </style>
+</head>
+<body>
+
+
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Elizabeth</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#" onclick="mostrarSeccion('inicio')">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" onclick="mostrarSeccion('sobre-mi')">Información personal</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" onclick="mostrarSeccion('hobbies')">Hobbies</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" onclick="mostrarSeccion('educacion')">Datos Académicos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" onclick="mostrarSeccion('contacto')">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <section id="inicio" class="seccion active-section text-center bg-light">
+    <div class="container">
+      <img src="static/eli2.jpeg" alt="Foto de Elizabteh" class="perfil-img my-4">
+      <h1 class="mb-3">¡Hola, soy Eli!</h1>
+      <p class="lead">Bienvenid@ a mi página, en este apartado conoceras acerca de mí, cada actividad que realizo, entre muchas cosas más. </p>
+    </div>
+  </section>
+
+
+  <section id="sobre-mi" class="seccion container">
+    <h2 class="text-center mb-4">Información personal</h2>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Mi nombre es Diana Elizabeth Cruz Mateo</li>
+        <li class="list-group-item">Actualmente tengo 18 años</li>
+        <li class="list-group-item">Lugar de nacimeinto fue en la CDMX</li>
+        <li class="list-group-item">Actualmente vivo en Jaltepec, Estado de México</li>
+        <li class="list-group-item">Fecha de nacimiento es el 09 de agosto de 2006</li>
+        <li class="list-group-item">Estoy estudiando la carrera de Ingeniería en Sistemas Computacionales</li>
+        <img src="static/eli.jpeg" alt="Imagen 1" class="img-fluid rounded shadow" style="width: 50%; height: auto;" alt="Imagen centrada">
+
+  </section>
+
+
+  <section id="hobbies" class="seccion bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Mis Hobbies</h2>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Leer libros de motivación, superación personal, ficción, romanticas</li>
+        <li class="list-group-item">Fotografiar paisajes, lugares, animales y asi.</li>
+        <li class="list-group-item">Jugar futbol</li>
+        <li class="list-group-item">Andar en bicicleta</li>
+        <li class="list-group-item">Escuchar cualquier género de música</li>
+        <li class="list-group-item">Compartir tiempo con personas que aprecio.</li>
+        <img src="static/arbo.jpeg" alt="Imagen 2" class="img-fluid rounded shadow" style="width: 50%; height: auto;" alt="Imagen centrada" >
+        <img src="static/mari.jpeg" alt="Imagen 3" class="img-fluid rounded shadow" style="width: 50%; height: auto;">
+      </ul>
+    </div>
+  </section>
+
+
+  <section id="educacion" class="seccion container">
+    <div class="container">
+      <h2 class="text-center mb-4">Datos Académicos</h2>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Nivel preescolar: Escuela Niños Heroes</li>
+        <li class="list-group-item">Nivel primaria: Escuela Benito Juarez</li>
+        <li class="list-group-item">Nivel secundaria: Escuela Secundaria Oficial Num. 0835 Jesús Yhmoff Cabrera </li>
+        <li class="list-group-item">Nivel preparatoria: Escuela Preparatoria Oficial Num. 322</li>
+        <li class="list-group-item">Nivel superior: Universidad Mexiquense del Bicentenario (Actualmente)</li>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="seccion bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">¡Contactame!</h2>
+      <div class="text-center">
+        <p>Correo electrónico: <strong>dianaelizabethcruzmateo@gmail.com</strong></p>
+        <p>Teléfono: <strong>7122137463</strong></p>
+        <p>Ubicación: <strong>Estado de México</strong></p>
+        <p>Redes sociales:</p>
+        <div class="d-flex justify-content-center gap-3 mt-2">
+          <a href="https://wa.me/7122137463" class="btn btn-success btn-sm" target="_blank">WhatsApp</a>
+          <a href="https://www.instagram.com/lizi_cruz11" class="btn btn-danger btn-sm" target="_blank">Instagram</a>
+          <a href="https://www.facebook.com/anita.mateo.39501" class="btn btn-info btn-sm text-white" target="_blank">Facebook</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    function mostrarSeccion(id) {
+      const secciones = document.querySelectorAll('.seccion');
+      secciones.forEach(seccion => {
+        seccion.classList.remove('active-section');
+      });
+      document.getElementById(id).classList.add('active-section');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+
+</body>
+</html>
